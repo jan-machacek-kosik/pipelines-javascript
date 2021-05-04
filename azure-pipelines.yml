@@ -17,9 +17,9 @@ steps:
 
 - task: Npm@1
   inputs:
-     command: 'install'
-     customRegistry: 'useFeed'
-     customFeed: '84326679-8810-477b-8444-e2b8adac11b8/69345cfc-2c91-4299-95a5-69ab955f8928'
+    command: 'install'
+    customRegistry: 'useFeed'
+    customFeed: '84326679-8810-477b-8444-e2b8adac11b8/43a88881-945c-415d-a697-37dda8600219'
 
 #- script: |
 #    npm install
