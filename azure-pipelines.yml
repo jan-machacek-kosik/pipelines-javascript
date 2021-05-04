@@ -15,10 +15,16 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
-- script: |
-    npm install
-    npm run build
-  displayName: 'npm install and build'
+- task: Npm@1
+  inputs:
+     command: 'install'
+     customRegistry: 'useFeed'
+     customFeed: '84326679-8810-477b-8444-e2b8adac11b8/69345cfc-2c91-4299-95a5-69ab955f8928'
+
+#- script: |
+#    npm install
+#    npm run build
+#  displayName: 'npm install and build'
 
 - script: 
     echo "test step is OK"
